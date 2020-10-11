@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play Game"
-        android:textSize="34dp"
-        android:textColor="#03A9F4"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"/>
 
     <ImageView
         android:id="@+id/btn_play"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/play"
+        android:src="@drawable/start"
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_gravity="center_horizontal"
