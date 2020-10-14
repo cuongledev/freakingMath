@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void slideUp(View view){
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
         customType(LoginActivity.this,"bottom-to-up");
     }
 }
