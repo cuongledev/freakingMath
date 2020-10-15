@@ -112,15 +112,15 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void slideUp(){
-        startActivity(new Intent(WelcomeActivity.this, PracticeActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, PlayActivity.class));
         customType(WelcomeActivity.this,"bottom-to-up");
     }
     public void upToBottom(){
-        startActivity(new Intent(WelcomeActivity.this, PracticeActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, PlayActivity.class));
         customType(WelcomeActivity.this,"up-to-bottom");
     }
     public void rightToLeft(){
-        startActivity(new Intent(WelcomeActivity.this, PracticeActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, PlayActivity.class));
         customType(WelcomeActivity.this,"right-to-left");
     }
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="24dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_item"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp"
+    android:layout_height="wrap_content"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/icon_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fat_icon" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/title_book"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Luyện tập"
+        android:gravity="center"
+        android:textColor="#4a4a4a"
+        android:textSize="18sp" />
+</LinearLayout>
