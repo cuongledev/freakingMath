@@ -13,7 +13,7 @@ public class PracticeActivity extends AppCompatActivity {
 
 
 
-    int images[] = {R.drawable.fat_icon, R.drawable.maintenance_icon, R.drawable.muscle_icon,R.drawable.muscle_icon, R.drawable.fat_icon, R.drawable.maintenance_icon};
+    int images[] = {R.drawable.ic_book_blue, R.drawable.ic_book_deep, R.drawable.ic_book_green,R.drawable.ic_book_pure, R.drawable.ic_book_yellow, R.drawable.ic_book_pink};
 
     String titles[] = {"Toán","Tiếng việt", "Đạo đức","Tự nhiên","Âm nhạc", "Thể dục"};
 
@@ -26,7 +26,7 @@ public class PracticeActivity extends AppCompatActivity {
 
 
 
-        praticeView = (GridView) findViewById(R.id.praticeView); // init praticeView
+        /*praticeView = (GridView) findViewById(R.id.praticeView); // init praticeView
 
         PraticeAdapter praticeAdapter = new PraticeAdapter(getApplicationContext(), images, titles);
         praticeView.setAdapter(praticeAdapter);
@@ -37,6 +37,6 @@ public class PracticeActivity extends AppCompatActivity {
 
 
             }
-        });
+        });*/
     }
 }
