@@ -1,15 +1,23 @@
 package com.cuongle.freakingmath;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.LinearLayout;
+
+import static maes.tech.intentanim.CustomIntent.customType;
 
 public class PracticeActivity extends AppCompatActivity {
 
     GridView praticeView;
+
+
+    CardView tv_one,tv_two,tv_three;
 
 
 
@@ -38,5 +46,36 @@ public class PracticeActivity extends AppCompatActivity {
 
             }
         });*/
+
+
+        tv_one = findViewById(R.id.tv_one);
+        tv_two = findViewById(R.id.tv_two);
+        tv_three = findViewById(R.id.tv_three);
+
+        tv_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rightToLeft();
+            }
+        });
+        tv_two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rightToLeft();
+            }
+        });
+        tv_three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rightToLeft();
+            }
+        });
+
+
+    }
+
+    public void rightToLeft(){
+        startActivity(new Intent(PracticeActivity.this, PlayActivity.class));
+        customType(PracticeActivity.this,"right-to-left");
     }
 }
