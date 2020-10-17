@@ -53,6 +53,7 @@
         <!-- Row1-->
         <!-- Column1-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_one"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -95,6 +96,7 @@
         <!-- Row2-->
         <!-- Column2-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_two"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -135,6 +137,7 @@
         <!-- Row3-->
         <!-- Column3-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_three"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -175,6 +178,7 @@
         <!-- Row4-->
         <!-- Column4-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_four"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -215,6 +219,7 @@
         <!-- Row5-->
         <!-- Column5-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_five"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -255,6 +260,7 @@
         <!-- Row6-->
         <!-- Column6-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_six"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"

@@ -1,15 +1,25 @@
 package com.cuongle.freakingmath;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class PracticeActivity extends AppCompatActivity {
+import static maes.tech.intentanim.CustomIntent.customType;
 
+public class PracticeActivity extends AppCompatActivity implements View.OnClickListener {
+
+    CardView cv_one,cv_two,cv_three,cv_four,cv_five,cv_six;
     GridView praticeView;
+    private int state = 0;
+    Animation fade;
 
 
 
@@ -38,5 +48,55 @@ public class PracticeActivity extends AppCompatActivity {
 
             }
         });*/
+
+        cv_one = findViewById(R.id.cv_one);
+        cv_two = findViewById(R.id.cv_two);
+        cv_three = findViewById(R.id.cv_three);
+        cv_four = findViewById(R.id.cv_four);
+        cv_five = findViewById(R.id.cv_five);
+        cv_six = findViewById(R.id.cv_six);
+
+        fade = AnimationUtils.loadAnimation(this,R.anim.fade);
+        cv_one.setOnClickListener(this);
+        cv_two.setOnClickListener(this);
+        cv_three.setOnClickListener(this);
+        cv_four.setOnClickListener(this);
+        cv_five.setOnClickListener(this);
+        cv_six.setOnClickListener(this);
+
+
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.cv_one:
+                rightToLeft();
+                break;
+            case R.id.cv_two:
+                rightToLeft();
+                break;
+            case R.id.cv_three:
+                rightToLeft();
+                break;
+            case R.id.cv_four:
+                rightToLeft();
+                break;
+            case R.id.cv_five:
+                rightToLeft();
+                break;
+            case R.id.cv_six:
+                rightToLeft();
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void rightToLeft() {
+        startActivity(new Intent(PracticeActivity.this, PlayActivity.class));
+        customType(PracticeActivity.this,"right-to-left");
     }
 }
