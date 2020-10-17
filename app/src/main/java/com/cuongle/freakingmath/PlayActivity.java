@@ -21,8 +21,11 @@ import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class PlayActivity extends AppCompatActivity {
+    int elapsedTime;
 
     GridView simpleGrid,resultGrid;
 

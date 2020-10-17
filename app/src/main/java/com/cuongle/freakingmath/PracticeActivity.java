@@ -62,6 +62,13 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         cv_five = findViewById(R.id.cv_five);
         cv_six = findViewById(R.id.cv_six);
 
+        cv_one.setOnClickListener(this);
+        cv_two.setOnClickListener(this);
+        cv_three.setOnClickListener(this);
+        cv_four.setOnClickListener(this);
+        cv_five.setOnClickListener(this);
+        cv_six.setOnClickListener(this);
+
     }
 
     @Override
@@ -91,7 +98,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
     }
 
     public void rightToLeft(){
-        startActivity(new Intent(PracticeActivity.this, PlayActivity.class));
+        startActivity(new Intent(PracticeActivity.this, MainActivity.class));
         customType(PracticeActivity.this,"right-to-left");
     }
 }
